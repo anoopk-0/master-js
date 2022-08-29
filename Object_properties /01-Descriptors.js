@@ -12,7 +12,7 @@ configurable – if true, the property can be deleted and these attributes can b
 IMP: The method Object.getOwnPropertyDescriptor allows to query the full information about a property.
 */
 
-//Syntex
+//Syntax
 let _descriptor = Object.getOwnPropertyDescriptor(obj, propertyName);
 
 let user = {
