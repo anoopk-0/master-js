@@ -6,9 +6,9 @@ One of the fundamental differences of objects versus primitives is that objects 
 let message = "Hello!";
 let phrase = message;
 
-//As a result we have two independent variables, each one storing the string "Hello!".
-
 /*
+As a result we have two independent variables, each one storing the string "Hello!".
+
 Objects are not like that.
 A variable assigned to an object stores not the object itself, but its “address in memory” – in other words “a reference” to it.
 Example:
@@ -18,23 +18,9 @@ let user = {
   name: "John",
 };
 
-//The object is stored somewhere in memory , while the user variable has a “reference” to it.
-//IMP: When an object variable is copied, the reference is copied, but the object itself is not duplicated.
+//IMP:When an object variable is copied, the reference is copied, but the object itself is not duplicated.
 
 let admin = user; // copy the reference
-
-/*
-TOPIC: Comparison by reference
-Two objects are equal only if they are the same object.
-
-For instance, here a and b reference the same object, thus they are equal:
-*/
-
-let a = {};
-let b = a; // copy the reference
-
-alert(a == b); // true, both variables reference the same object
-alert(a === b); // true
 
 /*
 TOPIC: Cloning and merging, Object.assign
@@ -42,7 +28,6 @@ TOPIC: Cloning and merging, Object.assign
 So, copying an object variable creates one more reference to the same object.
 */
 
-//NOTE:cloning without any operator or fun
 let _user = {
   name: "John",
   age: 30,
@@ -50,15 +35,9 @@ let _user = {
 
 let clone = {}; // the new empty object
 
-// let's copy all user properties into it
 for (let key in user) {
   clone[key] = user[key];
 }
-
-// now clone is a fully independent object with the same content
-clone.name = "Pete"; // changed the data in it
-
-alert(user.name); // still John in the original object
 
 //IMP:use  Object.assign to replace for..in loop for simple cloning,
 `Object.assign(dest, [src1, src2, src3...])`;
@@ -83,9 +62,6 @@ TOPIC: Nested cloning
 
 because the user.sizes is an object, it will be copied by reference. So clone and user will share the same sizes:
 
-we should use a cloning loop that examines each value of user[key] and, if it’s an object, then replicate its structure as well. That is called a “deep cloning”.
-
-
 We can use recursion to implement it. Or, to not reinvent the wheel, take an existing implementation, for instance _.cloneDeep(obj) from the JavaScript library lodash.
 
 */
@@ -101,3 +77,5 @@ function _deepClone(target) {
     return target;
   }
 }
+
+//The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.

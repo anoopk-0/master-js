@@ -4,8 +4,6 @@ Data types, there are eight data types in JavaScript. Seven of them are called �
 In contrast, objects are used to store keyed collections of various data and more complex entities.
 */
 
-//An empty object (“empty cabinet”) can be created using one of two syntaxes:
-
 let user = new Object(); // "object constructor" syntax
 let _user = {}; // "object literal" syntax
 
@@ -33,15 +31,13 @@ function _isEmpty(obj) {
 }
 
 /**
- IMP:Checking if a property exists
+IMP:Checking if a property exists
 
         (propertyName in objectName)
             
     The in operator returns true if the propertyName exists in the objectName.
-*/
 
-/*
-TOPIC: The “for…in” loop
+IMP:The “for…in” loop
 
 To walk over all keys of an object, there exists a special form of the loop: for..in
 */
@@ -64,20 +60,11 @@ for (let key in _person) {
 }
 
 /*
-README:
-Objects are associative arrays with several special features.
+TOPIC:Compare 2 Objects in JavaScript
 
-They store properties (key-value pairs), where:
+document.write(JSON.stringify(obj1) === JSON.stringify(obj2)); 
 
-Property keys must be strings or symbols (usually strings).
-Values can be of any type.
-To access a property, we can use:
+Object.entries(obj1).toString() === Object.entries(obj1).toString();
 
-The dot notation: obj.property.
-Square brackets notation obj["property"]. Square brackets allow taking the key from a variable, like obj[varWithKey].
-Additional operators:
-
-    To delete a property: delete obj.prop.
-    To check if a property with the given key exists: "key" in obj.
-    To iterate over an object: for (let key in obj) loop.
+Stringify method is costlier in performance because it has to serialize the whole object whereas lodash can exit early if it finds a mismatched key.
 */

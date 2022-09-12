@@ -1,10 +1,4 @@
 /*
-The regular {...} syntax allows us to create one object. But often we need to create many similar objects, like multiple users or menu items and so on.
-
-That can be done using constructor functions and the "new" operator. 
-*/
-
-/*
 TOPIC: Constructor function
 Constructor functions technically are regular functions. There are two conventions though:
 
@@ -69,32 +63,3 @@ function SmallUser() {
 }
 
 alert(new SmallUser().name); // John
-
-/*
-TOPIC: Methods in constructor 
-
-Using constructor functions to create objects gives a great deal of flexibility. The constructor function may have parameters that define how to construct the object, and what to put in it.
-
-Of course, we can add to this not only properties, but methods as well.
-*/
-
-function User(name) {
-  this.name = name;
-
-  this.sayHi = function () {
-    alert("My name is: " + this.name);
-  };
-}
-
-let john = new User("John");
-
-john.sayHi(); // My name is: John
-
-/*
-  john = {
-     name: "John",
-     sayHi: function() { ... }
-  }
-
-IMP: To create complex objects, there’s a more advanced syntax, classes, 
-*/
