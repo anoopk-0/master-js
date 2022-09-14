@@ -32,7 +32,7 @@ No matter where the method is found: in an object or its prototype. In a method 
                         --- [shape]{base/super/parent}------  
                        |                                    | [inheritance "IS A " relationship]
                        |                                    | 
-                       [circle]                             [sqaure] {child/derived}
+                       [circle]                             [square] {child/derived}
                        
 */
 
@@ -45,7 +45,7 @@ let circle extends shape = {}, to get the property of shape. [so shape is the pr
 
 IMP: PRototype is parent to another object.
 
-IMP: every Object as a constructor property that was used to contruct that object
+IMP: every Object as a constructor property that was used to construct that object
 
 IMP: Object is the base/root of everything in js ; [[Prototype]]: Object
 
@@ -55,8 +55,8 @@ Object.getPrototypeOf() Method
 The Object.getPrototypeOf() method of JavaScript returns the prototype (i.e. the value of the internal [[Prototype]] property) of the specified object.
 
 
-Prototypal inheritance: while accessing a property or a method on obj. js engine walk up the protoptype chain. till it reach the root object or find the target obj or method.
-Every object has as a propotype or a parent except the root object.
+Prototypal inheritance: while accessing a property or a method on obj. js engine walk up the prototype chain. till it reach the root object or find the target obj or method.
+Every object has as a prototype or a parent except the root object.
 */
 
 let x = {};
@@ -71,7 +71,7 @@ function Circle(radius) {
   };
 }
 
-//Protptype/parents = Circle
+//Prototype/parents = Circle
 let c1 = new Circle(10);
 
 /*
@@ -102,12 +102,12 @@ function _Circle(radius) {
   };
 }
 
-//prototypical memember
+//prototypical remember
 _Circle.prototype.move = function () {
   console.log("move..");
 };
 
-//Only give the intance(own property) memeber
+//Only give the instance(own property) member
 Object.keys(_Circle); // ['radius', 'draw']
 
 //for in give the instance member

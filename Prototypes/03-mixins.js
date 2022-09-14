@@ -1,5 +1,4 @@
 /**
- * 
 Composition is about creating small functions and creating bigger and more complete functions with them. Think of a function as a brick, composition is how you would make those bricks work together to build a wall or a house
 
 Mixin – is a generic object-oriented programming term: a class that contains methods for other classes.
@@ -8,8 +7,7 @@ Some other languages allow multiple inheritance. JavaScript does not support mul
 
 We can use mixins as a way to augment a class by adding multiple behaviors, like event-handling as we have seen above.
 
-
- */
+*/
 const canEat = {
   eat: function (hunger) {
     this.hunger = hunger;

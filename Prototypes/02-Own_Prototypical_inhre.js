@@ -1,5 +1,5 @@
 /*
-creating own proptotypical interitance
+creating own prototypical inheritance
 */
 
 //base
@@ -22,7 +22,6 @@ function Circle(radius, color) {
 Circle.prototype = Object.create(Shape.prototype);
 
 //resetting the constructor
-
 Circle.prototype.constructor = Circle;
 
 Circle.prototype.draw = function () {
@@ -30,15 +29,13 @@ Circle.prototype.draw = function () {
 };
 
 //TOPIC: Method Overriding
-//shape proto is change to Cirlce proto
+//shape proto is change to Circle proto
 Circle.prototype.duplicate = function () {
   console.log("duplicate");
 };
 
 /*
 TOPIC: polymorphism
- 
 
-duplicate has lot of form... which means polymorphism
-
+duplicate method has lot of form... which means polymorphism
 */
