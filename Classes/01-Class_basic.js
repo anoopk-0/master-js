@@ -21,7 +21,7 @@ class User {
     this.name = name;
   }
 
-  //protype member
+  //prototype member
   sayHi() {
     alert(this.name);
   }
@@ -48,12 +48,10 @@ What class User {...} construct really does is:
     - Stores class methods, such as sayHi, in User.prototype.
 After new User object is created, when we call its method, it’s taken from the prototype,
 
-*/
 
-/*
 TOPIC: Not just a syntactic sugar
 
-class in not just a syntactic suger..
+class in not just a syntactic sugar..
 
 1) Class methods are non-enumerable. A class definition sets enumerable flag to false for all methods in the "prototype".
 That’s good, because if we for..in over an object, we usually don’t want its class methods.

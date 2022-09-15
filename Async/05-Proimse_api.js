@@ -24,7 +24,7 @@ The Promise.all() method takes an iterable of promises as an input, and returns 
 
 IMP: Promise.race()
 The Promise.race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise.
-retrun promise as soon as any one of the promise is fulfills or rejected
+return promise as soon as any one of the promise is fulfills or rejected
 
 
 TOPIC: Promise. allSettled()

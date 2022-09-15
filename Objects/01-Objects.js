@@ -53,9 +53,8 @@ let _person = {
 };
 
 for (let key in _person) {
-  // keys
   alert(key); // name, age, isAdmin
-  // values for the keys
+
   alert(_person[key]); // John, 30, true
 }
 
