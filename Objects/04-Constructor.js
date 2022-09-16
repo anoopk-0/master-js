@@ -36,9 +36,7 @@ IMP:That’s the main purpose of constructors – to implement reusable object c
 
 README:
 technically, any function (except arrow functions, as they don’t have this) can be used as a constructor. It can be run with new, and it will execute the algorithm above. The “capital letter first” is a common agreement, to make it clear that a function is to be run with new.
-*/
 
-/*
 TOPIC: Return from constructors
 
 Usually, constructors do not have a return statement. Their task is to write all necessary stuff into this, and it automatically becomes the result.

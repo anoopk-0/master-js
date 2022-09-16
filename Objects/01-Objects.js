@@ -11,9 +11,8 @@ let _user = {}; // "object literal" syntax
 
 // an object: put some properties into {...} as “key: value” pairs:
 let person = {
-  //A property has a key (also known as “name” or “identifier”) before the colon ":" and a value to the right of it.
-  name: "John", // by key "name" store value "John"
-  age: 30, // by key "age" store value 30
+  name: "John",
+  age: 30,
 
   //function in a object is called as a Method
   fullName: function () {
