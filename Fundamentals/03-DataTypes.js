@@ -1,5 +1,5 @@
 /*
- //TOPIC: dataType:
+TOPIC:dataType:
 
 There are eight basic data types in JavaScript. They are:
 _______________________________________________________________________________________________________
@@ -20,15 +20,8 @@ Note: The Object data type (non-primitive type) can store collections of data, w
 
 ## To get the current type of the value that the variable stores, you use the typeof operator
 
-let counter;
-console.log(counter); // undefined
-console.log(typeof counter); // undefined
 
-let obj = null;
-console.log(typeof obj); // object
-
-console.log(null == undefined); // true
-
+TOPIC:NAN
 
 ## NaN stands for Not a Number.
 
@@ -47,12 +40,10 @@ console.log(NaN == NaN); // false
 
 //IMP:JavaScript strings are immutable. This means that it cannot be modified once created. However, you can create a new string from an existing string
 
-//IMP:To convert a value of another data type into a boolean value, you use the Boolean() function.
-console.log(Boolean("Hi")); // true
-console.log(Boolean("")); // false
-
 /*
-//TOPIC: JavaScript Primitive vs. Reference Values 
+
+TOPIC: JavaScript Primitive vs. Reference Values 
+
 (https://www.javascripttutorial.net/javascript-primitive-vs-reference-values/)
 
 JavaScript has two different types of values:

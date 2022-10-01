@@ -68,8 +68,8 @@ console.log(+person);
  *
  * Both increment and decrement operators have two versions: prefix and postfix.And you place the prefix and postfix versions of the increment or decrement operators before and after the variable to which they apply.
  *
- *      The prefix increment operator adds one to a value. The value is changed before the statement is evaluted.
- *      The postfix increment operator adds one to a value. The value is changed after the statement is evaluted.
+ *      The prefix increment operator adds one to a value. The value is changed before the statement is evaluated.
+ *      The postfix increment operator adds one to a value. The value is changed after the statement is evaluated.
  */
 
 let age = 25;
@@ -103,41 +103,27 @@ console.log("10" === 10); // false
 
 /**
  * TODO: Logical Operators
- * 
- * The NOT operator (!) negates a boolean value. The (!!) converts a value into its real boolean value.
+
+The NOT operator (!) negates a boolean value. The (!!) converts a value into its real boolean value.
 The AND operator (&&) is applied to two Boolean values and returns true if both values are true.
 The OR operator (||) is applied to two Boolean values and returns true if one of the operands is true.
 Both && and || operator are short-circuited. They cab be also applied to non-Boolean values.
 The logical operator precedence from the highest to the lowest is !, && and ||.
 
- *
- *
- *  Double-negation (!!)  The !! uses the logical NOT operator (!) twice to convert a value to its real boolean value. The result is the same as using the Boolean() function. For example:
- *
- */
+Double-negation (!!)  The !! uses the logical NOT operator (!) twice to convert a value to its real boolean value. The result is the same as using the Boolean() function. For example:
+
 let counter = 10;
 console.log(!!counter); // true
 
-/**
- *
- * A Chain of && operators
- */
-
 let result = value1 && value2 && value3;
 
-//For each value, converts it to a boolean. If the result is false, stops and returns the original value
+For each value, converts it to a boolean. If the result is false, stops and returns the original value
+If a value can be converted to true, it is so-called a truthy value. If a value can be converted to false, it is a so-called falsy value.
+ 
+Logical OR assignment operator (||=)    x ||= y is same as x || (x = y)
+Logical AND assignment operator (&&=)
+Nullish coalescing assignment operator (??=) x ??= y same as x ?? (x = y);
 
-//  If a value can be converted to true, it is so-called a truthy value. If a value can be converted to false, it is a so-called falsy value.
-
-/**
- * TODO: Logical Assignment Operators
- * 
-    Logical OR assignment operator (||=)    x ||= y is same as x || (x = y)
-    Logical AND assignment operator (&&=)
-    Nullish coalesing assignment operator (??=) x ??= y same as x ?? (x = y);
- */
-
-/*
  TODO: Nullish Coalescing Operator
  
     the nullish coalescing operator denoted by the double question marks (??). The nullish coalescing operator is a logical operator that accepts two values:

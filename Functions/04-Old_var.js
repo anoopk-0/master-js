@@ -36,9 +36,9 @@ var user = "John"; // this "var" does nothing (already declared)
 
 alert(user); // John
 
-//IMP: Declarations are hoisted, but assignments are not.
-
 /**
+IMP: Declarations are hoisted, but assignments are not.
+
 var are “hoisted” (raised) to the top of the function.
 The line var phrase = "Hello" has two actions in it:
 

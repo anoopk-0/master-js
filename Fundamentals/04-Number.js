@@ -1,7 +1,7 @@
 /*
 JavaScript uses the number type to represent both integers and floating-point values.
 
- //TOPIC: Integer numbers
+TOPIC:Integer numbers
 
 Integers can be represented in the following formats:
     Octal (base 8)
@@ -9,7 +9,7 @@ Integers can be represented in the following formats:
 
 When you use the octal and hexadecimal numbers in arithmetic operations, JavaScript treats them as decimal numbers.
 
- //TOPIC: Octal numbers
+TOPIC:Octal numbers
 An octal literal number starts with the digit zero (0) followed by a sequence of octal digits (numbers from 0 through 7).  
 
     **Note you can use the octal literals in non-strict mode. If you use them in strict mode, JavaScript will throw an error.
@@ -20,16 +20,18 @@ console.log(num); //57
 
 If an octal number contains a number that is not in the range from 0 to 7, the JavaScript engine ignores the 0 and treats the number as a decimal. For example:
 
-let num = 080;
-console.log(num); //80
+                let num = 080;
+                console.log(num); //80
 
- //IMP: This implicit behavior might cause issues. Therefore, ES6 introduced a new octal literal that starts with the 0o followed by a sequence of octal digits (from 0 to 7). For example:
+IMP:This implicit behavior might cause issues. Therefore, ES6 introduced a new octal literal that starts with the 0o followed by a sequence of octal digits (from 0 to 7). 
 
-let num = 0o71;
-console.log(num);//57
+For example:
 
-let num = 0o80;
-console.log(num); //SyntaxError: Invalid or unexpected token
+    let num = 0o71;
+    console.log(num);//57
+
+    let num = 0o80;
+    console.log(num); //SyntaxError: Invalid or unexpected token
 
 ## Big Number
 
@@ -37,7 +39,7 @@ When you have a very big number, you can use e-notation. E-notation indicates a 
 let amount = 3.14e7;
 The notation 3.14e7 means that take 3.14 and multiply it by 10^7.
 
- //IMP: Integers (numbers without a period or exponent notation) are accurate up to 15 digits. and Floating-point numbers are accurate up to 17 decimal places. When you perform arithmetic operations on floating-point numbers, you often get the approximate result.
+IMP:Integers (numbers without a period or exponent notation) are accurate up to 15 digits. and Floating-point numbers are accurate up to 17 decimal places. When you perform arithmetic operations on floating-point numbers, you often get the approximate result.
 
 */
 
@@ -79,14 +81,12 @@ There are 3 JavaScript methods that can be used to convert variables to numbers:
         parseInt()	Parses its argument and returns an integer [parses a string and returns a whole number. Spaces are allowed. Only the first number is returned]
 
         **If the number cannot be converted, NaN (Not a Number) is returned. 
- */
 
-/**
 ## Numeric conversion rules:
 
     Value	Becomes…
     undefined->	NaN
     null->	0
     true and false->	1 and 0
-    string->	Whitespaces from the start and end are removed. If the remaining string is empty, the result is 0. Otherwise, the number is “read” from the string. An error gives NaN.
+    string->	White spaces from the start and end are removed. If the remaining string is empty, the result is 0. Otherwise, the number is “read” from the string. An error gives NaN.
  */

@@ -1,5 +1,5 @@
 /**
- //TOPIC: The “script” tag
+TOPIC: The “script” tag
 JavaScript programs can be inserted almost anywhere into an HTML document using the <script> tag.
 
 Please note:
@@ -12,7 +12,7 @@ Please note:
     That reduces traffic and makes pages faster.
 
 
- //TOPIC: The modern mode, "use strict"
+TOPIC: The modern mode, "use strict"
 
 “use strict”
 The directive looks like a string: "use strict" or 'use strict'. When it is located at the top of a script, the whole script works the “modern” way.
@@ -28,7 +28,6 @@ Strict mode makes it easier to write "secure" JavaScript. Strict mode changes pr
        5. Forbids octal syntax (var x = 023; some devs assume wrongly that a preceding zero does nothing to change the number.)
        6. Forbids deleting plain names (delete x;)
 
-\*\* Modern JavaScript supports “classes” and “modules” – advanced language structures, that enable use strict automatically. So we don’t need to add the "use strict" directive, if we use them.
 
-
+       Modern JavaScript supports “classes” and “modules” – advanced language structures, that enable use strict automatically. So we don’t need to add the "use strict" directive, if we use them.
 */

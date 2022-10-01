@@ -1,10 +1,10 @@
-//IMP:JavaScript is a very function-oriented language. It gives us a lot of freedom. A function can be created at any moment, passed as an argument to another function, and then called from a totally different place of code later.
-
-//IMP:In JavaScript, there are 3 ways to declare a variable: let, const (the modern ones), and var (the remnant of the past).
-
 /*
-//TOPIC: Code blocks
+IMP:JavaScript is a very function-oriented language. It gives us a lot of freedom. A function can be created at any moment, passed as an argument to another function, and then called from a totally different place of code later.
 
+IMP:In JavaScript, there are 3 ways to declare a variable: let, const (the modern ones), and var (the remnant of the past).
+
+
+TOPIC: Code blocks
 If a variable is declared inside a code block {...}, it’s only visible inside that block.
 */
 
