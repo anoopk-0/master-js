@@ -15,10 +15,10 @@ IMP :Promise is a Object that holds the eventual result of an async operation. w
 */
 
 const p = new Promise(function (resolve, reject) {
-  //asyn operstion
+  //async operation
   try {
     setTimeout(() => {
-      console.log("calling the end point to get the userdata...");
+      console.log("calling the end point to get the user data...");
       resolve({ id: 1, username: "anookp-awas" });
     }, 2000);
   } catch (err) {
@@ -26,18 +26,18 @@ const p = new Promise(function (resolve, reject) {
   }
 });
 
-//fullfill., if then is not used, then pending is the result
+//fullfil., if then is not used, then pending is the result
 p.then((data) => console.log("data-->", data)).catch((err) => console.log(err));
 
 /*
-Replacing call back with prmomse
+Replacing call back with promise
 console.log("before...");
 
 
 getUser(function (data) {
   console.log("user:", data);
   getRepositories(data.username, function (result) {
-    console.log("respos", result);
+    console.log("repos", result);
   });
 }, 10);
 
@@ -89,10 +89,10 @@ function getUser(id) {
 function getRepositories(username) {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
-      console.log("getting the respositories with username", username);
+      console.log("getting the repositories with username", username);
       resolve({
         username,
-        id: "xhgaw1211we",
+        id: "some name",
         repos: ["project-01", "project-02"],
       });
     }, 2000);

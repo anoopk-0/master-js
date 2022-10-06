@@ -1,25 +1,6 @@
 /*
-IMP:JavaScript is a very function-oriented language. It gives us a lot of freedom. A function can be created at any moment, passed as an argument to another function, and then called from a totally different place of code later.
+TOPIC:Nested functions
 
-IMP:In JavaScript, there are 3 ways to declare a variable: let, const (the modern ones), and var (the remnant of the past).
-
-
-TOPIC: Code blocks
-If a variable is declared inside a code block {...}, it’s only visible inside that block.
-*/
-
-{
-  // do some job with local variables that should not be seen outside
-
-  let message = "Hello"; // only visible in this block
-
-  alert(message); // Hello
-}
-
-alert(message); // Error: message is not defined
-
-/*
-//TOPIC: Nested functions
 A function is called “nested” when it is created inside another function.
 */
 
@@ -33,10 +14,8 @@ function makeCounter() {
 
 let counter = makeCounter();
 
-console.log(counter); // 0
-
 /*
-//IMP: Lexical Environment/SCOPE
+IMP: Lexical Environment/SCOPE
 Every time the JavaScript engine creates an execution context to execute the function or global code, it also creates a new lexical environment to store the variable defined in that function during the execution of that function.
 
 A lexical environment is a data structure that holds identifier-variable mapping. (here identifier refers to the name of variables/functions, and the variable is the reference to actual object [including function type object] or primitive value).
@@ -61,12 +40,13 @@ Scope chain: Whenever our code tries to access a variable during the function ca
 
 ## closure
 
-A closure is a function having access to the parent scope(lexical scope), even after the parent function has closed(this part is clouser)
+A closure is a function having access to the parent scope(lexical scope), even after the parent function has closed(this part is closure)
 
 The closure is a function that accesses its lexical scope even executed outside of its lexical scope.
- */
 
-//Example for laxial scope
+*/
+
+//Example for Lexical scope
 const myFunction = () => {
   let myValue = 2;
   console.log(myValue);
@@ -80,7 +60,7 @@ const myFunction = () => {
 
 myFunction();
 
-//Example for Clouser
+//Example for closure
 const _myFunction = () => {
   let myValue = 2;
   console.log(myValue);
@@ -96,7 +76,7 @@ const result = myFunction();
 console.log(result);
 
 /*
-//TOPIC: Garbage collection
+TOPIC: Garbage collection
 
 Memory management in JavaScript is performed automatically and invisibly to us. We create primitives, objects, functions… All that takes memory.
 

@@ -4,12 +4,8 @@ Functions are the main “building blocks” of the program. They allow the code
  There are 2 types of functions:
     1. Function Declaration
     2. Function Expression
-*/
 
-let userName = "John";
-
-/**
-//TOPIC: Function Declaration
+TOPIC: Function Declaration
 
  * @description { showMessage } : name of the function
  * @param { parameter1, parameter2 } : pass arbitrary data to functions using parameters.
@@ -22,19 +18,6 @@ function showMessage(parameter1, parameter2 = "some default value") {
   let message = "Hello, I'm JavaScript!";
 }
 
-//calling a func
-showMessage();
-
-/**-----------------Example---------------- */
-function anotherFunction() {
-  return "some dafault text...";
-}
-
-function newMessage(from, text = anotherFunction()) {
-  // anotherFunction() only executed if no text given
-  // its result becomes the value of text
-}
-
 /*
 TOPIC: Returning a value
 A function can return a value back into the calling code as the result. The directive return can be in any place of the function. When the execution reaches it, the function stops, and the value is returned to the calling code. It is possible to use return without a value. That causes the function to exit immediately.
@@ -44,7 +27,7 @@ function doNothing() {
   return;
 }
 
-alert(doNothing() === undefined); // true
+console.log(doNothing() === undefined); // true
 
 //TOPIC: Function expressions
 
@@ -64,17 +47,8 @@ A callback is a function passed as an argument to another function. This techniq
 
 Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).
 
-IMP :JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.
+IMP:JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.
 
-
-
-TOPIC :Arrow functions
-
-Arrow functions can be used in the same way as Function Expressions.
-
-let func = (arg1, arg2, ...argN) => expression;
-
-IMP:For this particular task we could also use Array.from, because it converts an iterable (like a string) into an array:
 
 IMP:to copy an obj or object into other variable we can use spread operator. let x = {...abcO}
 */

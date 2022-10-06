@@ -8,9 +8,6 @@ These methods are not a part of JavaScript specification. But most environments 
 
 */
 
-//TOPIC: setTimeout
-
-//The syntax:
 let timerId1 = setTimeout(func | code, [delay], [arg1], [arg2], ...args);
 
 function sayHi(phrase, who) {
@@ -25,13 +22,9 @@ So, this will also work:
 
 setTimeout("alert('Hello')", 1000);
 
-
-IMP:
-Pass a function, but don’t run it
-Novice developers sometimes make a mistake by adding brackets () after the function:
-
 README: wrong!
 setTimeout(sayHi(), 1000);
+
 That doesn’t work, because setTimeout expects a reference to a function. And here sayHi() runs the function, and the result of its execution is passed to setTimeout. In our case the result of sayHi() is undefined (the function returns nothing), so nothing is scheduled.
 
 
@@ -55,12 +48,6 @@ let timerId = setInterval(func | code, [delay], [arg1], [arg2], ...args);
 README: 
 
 Garbage collection and setInterval/setTimeout callback
-
-When a function is passed in setInterval/setTimeout, an internal reference is created to it and saved in the scheduler. It prevents the function from being garbage collected, even if there are no other references to it.
-
-// the function stays in memory until the scheduler calls it
-setTimeout(function() {...}, 100);
-
 
 IMP: For setInterval the function stays in memory until clearInterval is called.
 

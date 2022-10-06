@@ -10,7 +10,7 @@ function pow(x, n) {
   return result;
 }
 
-alert(pow(2, 3)); // 8
+console.log(pow(2, 3)); // 8
 
 //recursive
 function pow(x, n) {
@@ -21,7 +21,7 @@ function pow(x, n) {
   }
 }
 
-alert(pow(2, 3)); // 8
+console.log(pow(2, 3)); // 8
 
 /*
 When pow(x, n) is called, the execution splits into two branches:
@@ -34,36 +34,4 @@ pow(x, n) =
               
 If n == 1, then everything is trivial. It is called the base of recursion, because it immediately produces the obvious result: pow(x, 1) equals x.
 Otherwise, we can represent pow(x, n) as x * pow(x, n - 1). In maths, one would write xn = x * xn-1. This is called a recursive step: we transform the task into a simpler action (multiplication by x) and a simpler call of the same task (pow with lower n). Next steps simplify it further and further until n reaches 1.  
-  
-
-IMP: Linked list
-we want to store an ordered list of objects.
-
-The natural choice would be an array:
-    let arr = [obj1, obj2, obj3];
-
-…But there’s a problem with arrays. The “delete element” and “insert element” operations are expensive. For instance, arr.unshift(obj) operation has to renumber all elements to make room for a new obj, and if the array is big, it takes time. Same with arr.shift().
-
-The only structural modifications that do not require mass-renumbering are those that operate with the end of array: arr.push/pop. So an array can be quite slow for big queues, when we have to work with the beginning.
-
-The linked list element is recursively defined as an object with:
-
-    -value.
-    -next property referencing the next linked list element or null if that’s the end.
-
-
-instance
-let list = {
-  value: 1,
-  next: {
-    value: 2,
-    next: {
-      value: 3,
-      next: {
-        value: 4,
-        next: null
-      }
-    }
-  }
-};
 */

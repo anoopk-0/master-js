@@ -8,7 +8,7 @@ A callback function is a function that is passed as an argument to another funct
 */
 console.log("before...");
 
-//if we have lot of function nested  asyn job, make hard to maintain: also call the callback hell.
+//if we have lot of function nested  async job, make hard to maintain: also call the callback hell.
 getUser(function (data) {
   console.log("user:", data);
   getRepositories(data.username, function (result) {
@@ -18,7 +18,7 @@ getUser(function (data) {
 
 console.log("After...");
 
-//callback is a funtion which is called when the async result is ready.
+//callback is a function which is called when the async result is ready.
 function getUser(callback, id) {
   setTimeout(function () {
     console.log("calling a database....with id:", id);
