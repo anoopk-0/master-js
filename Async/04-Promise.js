@@ -7,7 +7,7 @@ Promises are one way to deal with asynchronous code, without getting stuck in ca
 ## Creating a promise
 The Promise API exposes a Promise constructor, which you initialize using new Promise():
 
-IMP :Promise is a Object that holds the eventual result of an async operation. when a asyc operation complete it either result in a value or a error. this Object can be one of the 3 state:  
+IMP :Promise is a Object that holds the eventual result of an async operation. when a async operation complete it either result in a value or a error. this Object can be one of the 3 state:  
 
     pending: when we create a promise
     fulfilled: on successful exec
@@ -53,7 +53,7 @@ function getUser(callback, id) {
 
 function getRepositories(username, callback) {
   setTimeout(function () {
-    console.log("getting the respositories with username", username);
+    console.log("getting the repositories with username", username);
     callback({
       username,
       id: "xhgaw1211we",
@@ -70,7 +70,7 @@ getUser(10)
   .then((user) => {
     console.log("user:", data);
     getRepositories(user.username).then((result) =>
-      console.log("respos", result)
+      console.log("repos", result)
     );
   })
   .catch((err) => console.log("error:", err));

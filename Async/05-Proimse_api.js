@@ -11,7 +11,7 @@ Promise is a static method, it will return a promise that is already resolved.
 const p1 = Promise.resolve({ id: 1, name: "anoopk" });
 p1.then((data) => console.log(data));
 
-const p2 = Promise.reject(new Error("some error occured"));
+const p2 = Promise.reject(new Error("some error occurred"));
 p2.catch((error) => console.log(error));
 
 /*
@@ -42,7 +42,7 @@ let _p2 = new Promise((resolve) =>
   setTimeout(() => {
     console.log("_p2 promise is resolved...");
     resolve({
-      username: "anujl",
+      username: "nuj-l",
       id: "xhgaw1211we",
       repos: ["project-01", "project-02"],
     });
