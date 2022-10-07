@@ -57,22 +57,6 @@ function sayHi() {
 sayHi();
 
 /*
-TOPIC: IIFE
-
-In the past, as there was only var, and it has no block-level visibility, programmers invented a way to emulate it. What they did was called “immediately-invoked function expressions” 
-*/
-
-(function () {
-  var message = "Hello";
-
-  alert(message); // Hello
-})();
-
-//Here, a Function Expression is created and immediately called. So the code executes right away and has its own private variables.
-//we declare a Function Expression and run it immediately. Let’s note again: nowadays there’s no reason to write such code.
-
-/*
 TOPIC: Global object
-
 In a browser, global functions and variables declared with var (not let/const!) become the property of the global object:
 */

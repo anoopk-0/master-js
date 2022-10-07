@@ -16,6 +16,9 @@ let counter = makeCounter();
 
 /*
 IMP: Lexical Environment/SCOPE
+
+IMP:"Lexical scope means that in a nested group of functions, the inner functions have access to the variables and other resources of their parent scope. This means that the child's functions are lexically bound to the execution context of their parents. Lexical scope is sometimes also referred to as static scope."
+
 Every time the JavaScript engine creates an execution context to execute the function or global code, it also creates a new lexical environment to store the variable defined in that function during the execution of that function.
 
 A lexical environment is a data structure that holds identifier-variable mapping. (here identifier refers to the name of variables/functions, and the variable is the reference to actual object [including function type object] or primitive value).

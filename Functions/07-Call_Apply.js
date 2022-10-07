@@ -14,8 +14,7 @@ function add(x, y) {
 }
 
 let result = add(10, 20);
-console.log(result); // 30
-//or
+
 let result1 = add.call(this, 10, 20);
 console.log(result); // 30
 
