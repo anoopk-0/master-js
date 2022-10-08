@@ -2,6 +2,10 @@
 TOPIC: Arrow functions have no “this”
 
 arrow functions do not have this. If this is accessed, it is taken from the outside.
+
+1) An arrow function doesn’t have its own this value. Instead, it uses the this value of the enclosing lexical scope. An arrow function also doesn’t have the arguments object.
+
+2) Avoid using the arrow function for event handlers, object methods, prototype methods, and functions that use the arguments object.
 */
 
 let group = {
@@ -26,7 +30,7 @@ let _group = {
   showList() {
     this.students.forEach(function (student) {
       // Error: Cannot read property 'title' of undefined
-      alert(this.title + ": " + student);
+      console.log(this.title + ": " + student);
     });
   },
 };

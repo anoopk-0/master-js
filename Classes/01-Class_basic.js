@@ -23,7 +23,7 @@ class User {
 
   //prototype member
   sayHi() {
-    alert(this.name);
+    console.log(this.name);
   }
 }
 
@@ -68,7 +68,7 @@ function User(name) {
 
 // 2. Add the method to prototype
 User.prototype.sayHi = function () {
-  alert(this.name);
+  console.log(this.name);
 };
 
 // Usage:
@@ -92,7 +92,7 @@ class User {
 
   set name(value) {
     if (value.length < 4) {
-      alert("Name is too short.");
+      console.log("Name is too short.");
       return;
     }
     this._name = value;
@@ -100,7 +100,7 @@ class User {
 }
 
 let user_ = new User("John");
-alert(user_.name); // John
+console.log(user_.name); // John
 
 user = new User(""); // Name is too short.
 
@@ -113,7 +113,7 @@ class Button {
 
   //change it to arrow function
   click() {
-    alert(this.value);
+    console.log(this.value);
   }
 }
 

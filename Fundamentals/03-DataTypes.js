@@ -87,5 +87,5 @@ If a variable is declared, but not assigned, then its value is undefined:
 
 let age;
 
-alert(age); // shows "undefined"
+console.log(age); // shows "undefined"
 */

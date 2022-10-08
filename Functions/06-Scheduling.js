@@ -11,7 +11,7 @@ These methods are not a part of JavaScript specification. But most environments 
 let timerId1 = setTimeout(func | code, [delay], [arg1], [arg2], ...args);
 
 function sayHi(phrase, who) {
-  alert(phrase + ", " + who);
+  console.log(phrase + ", " + who);
 }
 
 setTimeout(sayHi, 1000, "Hello", "John"); // Hello, John
@@ -20,7 +20,7 @@ setTimeout(sayHi, 1000, "Hello", "John"); // Hello, John
 If the first argument is a string, then JavaScript creates a function from it.
 So, this will also work:
 
-setTimeout("alert('Hello')", 1000);
+setTimeout("console.log('Hello')", 1000);
 
 README: wrong!
 setTimeout(sayHi(), 1000);
@@ -61,6 +61,6 @@ There’s a special use case: setTimeout(func, 0), or just setTimeout(func).
 This schedules the execution of func as soon as possible. But the scheduler will invoke it only after the currently executing script is complete.
 */
 
-setTimeout(() => alert("World"));
+setTimeout(() => console.log("World"));
 
-alert("Hello");
+console.log("Hello");

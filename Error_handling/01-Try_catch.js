@@ -42,7 +42,7 @@ try {
     noSuchVariable; // script will die here
   }, 1000);
 } catch (err) {
-  alert( "won't work" );
+  console.log( "won't work" );
 }
 That’s because the function itself is executed later, when the engine has already left the try...catch construct.
 
@@ -52,7 +52,7 @@ setTimeout(function() {
   try {
     noSuchVariable; // try...catch handles the error!
   } catch {
-    alert( "error is caught here!" );
+    console.log( "error is caught here!" );
   }
 }, 1000);
  */

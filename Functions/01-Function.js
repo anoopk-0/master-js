@@ -32,11 +32,11 @@ console.log(doNothing() === undefined); // true
 //TOPIC: Function expressions
 
 let sayHi = function () {
-  alert("Hello");
+  console.log("Hello");
 };
 
 function sayHi() {
-  alert("Hello");
+  console.log("Hello");
 }
 
 /*
@@ -58,6 +58,6 @@ let arrCopy = [...arr]; // spread the array into a list of parameters
 // then put the result into a new array
 
 // do the arrays have the same contents?
-alert(JSON.stringify(arr) === JSON.stringify(arrCopy)); // true
+console.log(JSON.stringify(arr) === JSON.stringify(arrCopy)); // true
 
 //This way of copying an object is much shorter than let objCopy = Object.assign({}, obj) or for an array let arrCopy = Object.assign([], arr) so we prefer to use it whenever we can.

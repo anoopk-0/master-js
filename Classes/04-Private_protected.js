@@ -17,7 +17,7 @@ class CoffeeMachine {
 
   constructor(power) {
     this.power = power;
-    alert(`Created a coffee-machine, power: ${power}`);
+    console.log(`Created a coffee-machine, power: ${power}`);
   }
 }
 
@@ -72,6 +72,6 @@ class CoffeeMachine {
 // create the coffee machine
 let coffeeMachine = new CoffeeMachine(100);
 
-alert(`Power is: ${coffeeMachine.power}W`); // Power is: 100W
+console.log(`Power is: ${coffeeMachine.power}W`); // Power is: 100W
 
 coffeeMachine.power = 25; // Error (no setter)

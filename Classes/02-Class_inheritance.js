@@ -56,7 +56,7 @@ Classes provide "super" keyword for that.
 
 class Rabbit extends Animal {
   hide() {
-    alert(`${this.name} hides!`);
+    console.log(`${this.name} hides!`);
   }
 
   stop() {

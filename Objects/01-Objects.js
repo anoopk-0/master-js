@@ -52,9 +52,9 @@ let _person = {
 };
 
 for (let key in _person) {
-  alert(key); // name, age, isAdmin
+  console.log(key); // name, age, isAdmin
 
-  alert(_person[key]); // John, 30, true
+  console.log(_person[key]); // John, 30, true
 }
 
 /*

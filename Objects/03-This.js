@@ -9,7 +9,7 @@ let user = {
 };
 
 user.sayHi = function () {
-  alert("Hello!");
+  console.log("Hello!");
 };
 
 /*
@@ -24,7 +24,7 @@ let user = {
 
   sayHi() {
     // "this" is the "current object"
-    alert(this.name);
+    console.log(this.name);
   },
 };
 
@@ -36,7 +36,7 @@ TOPIC: “this” is not bound
 In JavaScript, keyword this behaves unlike most other programming languages. It can be used in any function, even if it’s not a method of an object.
     `
     function sayHi() {
-        alert( this.name );
+        console.log( this.name );
     }
     `
 The value of this is evaluated during the run-time, depending on the context.
@@ -55,7 +55,7 @@ For instance, here arrow() uses "this" from the outer user.sayHi() method:
 let user = {
   firstName: "Ilya",
   sayHi() {
-    let arrow = () => alert(this.firstName);
+    let arrow = () => console.log(this.firstName);
     arrow();
   }
 };

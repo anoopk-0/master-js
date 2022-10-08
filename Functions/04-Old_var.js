@@ -14,7 +14,7 @@ if (true) {
   var test = true; // use "var" instead of "let"
 }
 
-alert(test); // true, the variable lives after if
+console.log(test); // true, the variable lives after if
 
 //IMP:If a code block is inside a function, then var becomes a function-level variable:
 
@@ -27,14 +27,14 @@ function sayHi() {
 }
 
 sayHi();
-alert(phrase); // ReferenceError: phrase is not defined
+console.log(phrase); // ReferenceError: phrase is not defined
 
 //IMP:With var, we can redeclare a variable any number of times. If we use var with an already-declared variable, it’s just ignored:
 var user = "Pete";
 var user = "John"; // this "var" does nothing (already declared)
 // ...it doesn't trigger an error
 
-alert(user); // John
+console.log(user); // John
 
 /**
 IMP: Declarations are hoisted, but assignments are not.
@@ -49,7 +49,7 @@ The line var phrase = "Hello" has two actions in it:
 function sayHi() {
   var phrase; // declaration works at the start...
 
-  alert(phrase); // undefined
+  console.log(phrase); // undefined
 
   phrase = "Hello"; // ...assignment - when the execution reaches it.
 }

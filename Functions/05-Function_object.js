@@ -15,23 +15,23 @@ So, a function can do a useful job by itself and also carry a bunch of other fun
 //The “name” property
 
 function sayHi() {
-  alert("Hi");
+  console.log("Hi");
 }
 
-alert(sayHi.name); // sayHi
+console.log(sayHi.name); // sayHi
 
 //The “length” property
 function f1(a) {}
 function f2(a, b) {}
 function many(a, b, ...more) {}
 
-alert(f1.length); // 1
-alert(f2.length); // 2
-alert(many.length); // 2
+console.log(f1.length); // 1
+console.log(f2.length); // 2
+console.log(many.length); // 2
 
 //Custom properties
 function sayHi() {
-  alert("Hi");
+  console.log("Hi");
 
   // let's count how many times we run
   sayHi.counter++;
@@ -51,8 +51,8 @@ function makeCounter() {
 }
 
 let counter = makeCounter();
-alert(counter()); // 0
-alert(counter()); // 1
+console.log(counter()); // 0
+console.log(counter()); // 1
 
 /**
 problem:
@@ -86,7 +86,7 @@ function sum(a) {
   return sum;
 }
 
-alert(sum(1)(2)); // 3
-alert(sum(5)(-1)(2)); // 6
-alert(sum(6)(-1)(-2)(-3)); // 0
-alert(sum(0)(1)(2)(3)(4)(5)); // 15
+console.log(sum(1)(2)); // 3
+console.log(sum(5)(-1)(2)); // 6
+console.log(sum(6)(-1)(-2)(-3)); // 0
+console.log(sum(0)(1)(2)(3)(4)(5)); // 15
