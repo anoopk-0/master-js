@@ -90,3 +90,23 @@ console.log(sum(1)(2)); // 3
 console.log(sum(5)(-1)(2)); // 6
 console.log(sum(6)(-1)(-2)(-3)); // 0
 console.log(sum(0)(1)(2)(3)(4)(5)); // 15
+
+/**
+problem:
+    sum(1)(2) == 3; // 1 + 2
+    sum(1)(2)(3) == 6; // 1 + 2 + 3
+    sum(5)(-1)(2) == 6
+    sum(6)(-1)(-2)(-3) == 0
+    sum(0)(1)(2)(3)(4)(5) == 15
+ */
+
+let sum = function (a) {
+  return function (b) {
+    if (b) {
+      return sum(a + b);
+    }
+    return a;
+  };
+};
+
+console.log(sum(10)(3)(100)());

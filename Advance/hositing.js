@@ -1,12 +1,13 @@
 /*
-Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top of scope.
+Hoisting is the default behavior of javascript where all the variable and function declarations are moved on top of scope.
 
 Note: In hoisting, though it seems that the declaration has moved up in the program, the actual thing that happens is that the function and variable declarations are added to memory during the compile phase. 
 
 In terms of variables and constants, keyword var is hoisted and let and const does not allow hoisting.
+
+program to display value
 */
 
-// program to display value
 a = 5;
 console.log(a);
 var a; // 5
