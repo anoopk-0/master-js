@@ -1,9 +1,3 @@
-/*
-Data types, there are eight data types in JavaScript. Seven of them are called “primitive”, because their values contain only a single thing (be it a string or a number or whatever).
-
-In contrast, objects are used to store keyed collections of various data and more complex entities.
-*/
-
 let user = new Object(); // "object constructor" syntax
 let _user = {}; // "object literal" syntax
 

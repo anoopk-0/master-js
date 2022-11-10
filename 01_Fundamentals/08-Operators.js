@@ -6,7 +6,7 @@
  *
  *      -If either value is a string, the addition operator uses the following rules:
             If both values are strings, it concatenates the second string to the first one.
-            If one value is a string, it implicitly converts the numeric value into a string and conatenate two strings.
+            If one value is a string, it implicitly converts the numeric value into a string and concatenate two strings.
  */
 
 let x = "10",
@@ -23,7 +23,6 @@ console.log(result); // 1020
             First, convert the into a number using the Number() function.
             Second, perform the subtraction.
 
- * 
  * Multiplication operator (*)
  * 
  * JavaScript uses the asterisk (*) to represent the multiplication operator. The multiplication operator multiplies two numbers and returns a single value.

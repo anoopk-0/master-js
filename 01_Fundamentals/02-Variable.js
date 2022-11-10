@@ -27,5 +27,5 @@ TOPIC:Identifiers
 There are two limitations on variable names in JavaScript. By convention, variable names use camel case like message, yourAge, and myName.
 
     The name must contain only letters, digits, or the symbols $ and _.
-    The first character must not be a digit.
+    The first character must not be a digit and other special characters.
 */
