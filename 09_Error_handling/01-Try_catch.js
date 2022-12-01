@@ -21,18 +21,14 @@ It works like this:
 1. First, the code in try {...} is executed.
 2. If there were no errors, then catch (err) is ignored: the execution reaches the end of try and goes on, skipping catch.
 3. If an error occurs, then the try execution is stopped, and control flows to the beginning of catch (err). The err variable (we can use any name for it) will contain an error object with details about what happened.
-*/
 
-/*
 NOTE:
 For try...catch to work, the code must be runnable. In other words, it should be valid JavaScript.
 
 The JavaScript engine first reads the code, and then runs it. The errors that occur on the reading phase are called “parse-time” errors and are unrecoverable (from inside that code). That’s because the engine can’t understand the code.
 
 So, try...catch can only handle errors that occur in valid code. Such errors are called “runtime errors” or, sometimes, “exceptions”.
-*/
 
-/*
 NOTE:
 try...catch works synchronously
 If an exception happens in “scheduled” code, like in setTimeout, then try...catch won’t catch it:
@@ -55,15 +51,11 @@ setTimeout(function() {
     console.log( "error is caught here!" );
   }
 }, 1000);
- */
 
-/*
 TOPIC: “Throw” operator
 
 The throw operator generates an error.
-*/
 
-/*
 TOPIC: try…catch…finally
 
 The try...catch construct may have one more code clause: finally.

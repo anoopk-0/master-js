@@ -10,3 +10,5 @@ function multiple(a, b) {
 
 //2 multiple
 const multipleOfTwo = multiple.bind(this, 2);
+
+//IMP:https://medium.com/swlh/currying-in-javascript-bbe4ddedf86b

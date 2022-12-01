@@ -19,10 +19,8 @@ Debounce: Debouncing is a programming practice used to ensure that time-consumin
 const throttle = function (callback, limit) {
   let isFistCall = true;
   return function () {
-    let context = this,
-      args = arguments;
     if (isFistCall) {
-      callback.apply(context, args);
+      callback.apply(this, arguments);
       isFistCall = false;
       setTimeout(() => (isFistCall = true), limit);
     }

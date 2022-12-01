@@ -31,7 +31,7 @@ IMP:How to scale a website
 
   -Caching – Local Caching which involves storing external resources locally and looking up next time when same resources are requested. Centralized Caching focuses on loading data once and sharing it across multiple devices.All can connect to same store and pull in resources, Redis can be using for this purpose
   
-  -More servers – It’s a no-brainer. Bigger and better server always help in handling more traffic
+  -More servers – It’s a no-brainier. Bigger and better server always help in handling more traffic
 
   -Reduce Bandwidth usage – Whenever your server receives a lot of traffic, it’s important to decrease bandwidth usage. This effectively leads to increase in page speed, as load on server decreases. This can be done by compressing your code and other resources.
  */
