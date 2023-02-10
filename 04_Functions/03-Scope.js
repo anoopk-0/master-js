@@ -23,8 +23,6 @@ IMP:"Lexical scope means that in a nested group of functions, the inner function
 
 Every time the JavaScript engine creates an execution context to execute the function or global code, it also creates a new lexical environment to store the variable defined in that function during the execution of that function.
 
-A lexical environment is a data structure that holds identifier-variable mapping. (here identifier refers to the name of variables/functions, and the variable is the reference to actual object [including function type object] or primitive value).
-
 A Lexical Environment has two components: 
     (1) the environment record and 
     (2) a reference to the outer environment.

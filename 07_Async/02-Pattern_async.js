@@ -11,7 +11,7 @@ console.log("user:", user); //undefined..
 
 console.log("After...");
 
-//get userf func
+//get user func
 function getUser(id) {
   setTimeout(function () {
     console.log("calling a database....with id:", id);

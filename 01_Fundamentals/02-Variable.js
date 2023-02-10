@@ -1,7 +1,7 @@
 /*
 TOPIC:variable
 
-A variable is a “named storage” for data. A variable is a label that references a value like a number or string
+A variable is a “named storage” for data. A variable is a label that references a value like a number or string.
 
 `Let message`;
 JavaScript is a dynamically typed language. This means that we don’t need to specify the variable’s type in the declaration like other static typed languages such as Java or C#.
