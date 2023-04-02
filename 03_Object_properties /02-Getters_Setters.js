@@ -4,9 +4,8 @@ There are two kinds of object properties.
 The first kind is data properties. We already know how to work with them. All properties that we’ve been using until now were data properties.
 
 The second type of property is something new. It’s an "accessor property". They are essentially functions that execute on getting and setting a value, but look like regular properties to an external code.
-*/
 
-/*
+
 TOPIC: Getters and setters
 
 Accessor properties are represented by “getter” and “setter” methods. In an object literal they are denoted by get and set:
@@ -50,7 +49,6 @@ get – a function without arguments, that works when a property is read,
 set – a function with one argument, that is called when the property is set,
 enumerable – same as for data properties,
 configurable – same as for data properties.
-
 
 
 

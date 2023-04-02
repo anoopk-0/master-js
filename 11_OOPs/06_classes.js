@@ -3,8 +3,6 @@ TOPIC: Classes
 
 *Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
 
-Classes are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.
-
 IMP: Hoisting
 An important difference between function declarations and class declarations is that function declarations are hoisted and class declarations are not.
 

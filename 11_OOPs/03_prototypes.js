@@ -20,7 +20,7 @@ Object.getPrototypeOf(name_of_object);
 
 let user_age = 23;
 user_age.toString();
-// though the toString() method is not defined in user_age, the js engine walks up the prototype chain, and see for toString method. if it find then return the value, if not then error.
+//!though the toString() method is not defined in user_age, the js engine walks up the prototype chain, and see for toString method. if it find then return the value, if not then error.
 
 //TODO: multi level inheritance
 function Circle(radius) {

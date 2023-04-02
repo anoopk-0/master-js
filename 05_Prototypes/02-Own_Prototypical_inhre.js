@@ -1,8 +1,3 @@
-/*
-creating own prototypical inheritance
-*/
-
-//base
 function Shape(color) {
   this.color = color;
 }

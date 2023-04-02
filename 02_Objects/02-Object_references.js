@@ -1,6 +1,5 @@
 /*
-IMP:
-One of the fundamental differences of objects versus primitives is that objects are stored and copied “by reference”, whereas primitive values: strings, numbers, booleans, etc – are always copied “as a whole value”.
+!One of the fundamental differences of objects versus primitives is that objects are stored and copied “by reference”, whereas primitive values: strings, numbers, booleans, etc – are always copied “as a whole value”.
 */
 
 let message = "Hello!";
@@ -45,10 +44,7 @@ for (let key in user) {
 let permissions1 = { canView: true };
 let permissions2 = { canEdit: true };
 
-// copies all properties from permissions1 and permissions2 into user
 Object.assign(_user, permissions1, permissions2);
-
-// now user = { name: "John", canView: true, canEdit: true }
 
 /*
 TOPIC: Nested cloning
@@ -78,4 +74,4 @@ function _deepClone(target) {
   }
 }
 
-//The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.
+//!The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.

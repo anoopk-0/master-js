@@ -1,6 +1,5 @@
 /*
-A function that is a property of an object is called its method. Actions are represented in JavaScript by functions in properties.
-IMP:The value of this is determined by a function's execution context, which in simple terms means how a function is called.
+!IMP:The value of this is determined by a function's execution context, which in simple terms means how a function is called.
 */
 
 let user = {
@@ -23,7 +22,6 @@ let user = {
   age: 30,
 
   sayHi() {
-    // "this" is the "current object"
     console.log(this.name);
   },
 };
@@ -44,7 +42,7 @@ The value of this is evaluated during the run-time, depending on the context.
 README:
 The consequences of unbound this.
 
-In JavaScript this is “free”, its value is evaluated at call-time and does not depend on where the method was declared, but rather on what object is “before the dot”.
+!In JavaScript this is “free”, its value is evaluated at call-time and does not depend on where the method was declared, but rather on what object is “before the dot”.
 
 TOPIC: Arrow functions have no “this”
 

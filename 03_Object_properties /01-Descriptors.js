@@ -39,21 +39,13 @@ IMP: To change the flags, we can use Object.defineProperty.
 2.descriptor
     Property descriptor object to apply.
 
-If the property exists, defineProperty updates its flags. Otherwise, it creates the property with the given value and flags; in that case, if a flag is not supplied, it is assumed false.
-*/
 
-/*
 TOPIC: Non-writable 
 
 let user = {
   name: "John"
 };
 
-Object.defineProperty(user, "name", {
-  writable: false
-});
-
-user.name = "Pete"; // Error: Cannot assign to read only property 'name'
 
 Errors appear only in strict mode:
 In the non-strict mode, no errors occur when writing to non-writable properties and such. But the operation still won’t succeed. Flag-violating actions are just silently ignored in non-strict.
@@ -62,24 +54,16 @@ TOPIC: Non-configurable
 
 The non-configurable flag (configurable:false) is sometimes preset for built-in objects and properties.
 
-IMP:"A non-configurable property can’t be deleted, its attributes can’t be modified".
+!IMP:"A non-configurable property can’t be deleted, its attributes can’t be modified".
 
 For instance, Math.PI is non-writable, non-enumerable and non-configurable:
 
-IMP:Making a property non-configurable is a one-way road. We cannot change it back with defineProperty.
-configurable: false prevents changes of property flags and its deletion, while allowing to change its value.
+!IMP:Making a property non-configurable is a one-way road. We cannot change it back with defineProperty.
 
-Object.defineProperty(user, "name", {
-  configurable: false
-});
-
-user.name = "Pete"; // works fine
-delete user.name; // Error
 
 TOPIC: Object.defineProperties
 
 There’s a method Object.defineProperties(obj, descriptors) that allows to define many properties at once.
-
 The syntax is:
 Object.defineProperties(user, {
   name: { value: "John", writable: false },
@@ -87,6 +71,8 @@ Object.defineProperties(user, {
   // ...
 });
 So, we can set many properties at once.
+
+
 
 TOPIC: Sealing an object globally
 
