@@ -27,7 +27,7 @@ TOPIC:NAN
 
 The NaN has two special characteristics:
 
-    Any operation with NaN returns NaN.
+    !Any operation with NaN returns NaN.
     The NaN does not equal any value, including itself.
 
     Mathematical operations are safe

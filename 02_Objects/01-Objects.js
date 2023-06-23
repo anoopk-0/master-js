@@ -19,9 +19,7 @@ let _person = {
 
 //1. object literal
 const circle = {
-  // object in js, is a collection of key, value pair.
   radius: 1,
-  //method
   move: function () {
     console.log(`move the circle...`);
   },

@@ -12,7 +12,7 @@ When you use the octal and hexadecimal numbers in arithmetic operations, JavaScr
 TOPIC:Octal numbers
 An octal literal number starts with the digit zero (0) followed by a sequence of octal digits (numbers from 0 through 7).  
 
-    **Note you can use the octal literals in non-strict mode. If you use them in strict mode, JavaScript will throw an error.
+    !Note you can use the octal literals in non-strict mode. If you use them in strict mode, JavaScript will throw an error.
 
 example:
 let num = 071;
