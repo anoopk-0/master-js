@@ -35,3 +35,13 @@ IMP:How to scale a website
 
   -Reduce Bandwidth usage – Whenever your server receives a lot of traffic, it’s important to decrease bandwidth usage. This effectively leads to increase in page speed, as load on server decreases. This can be done by compressing your code and other resources.
  */
+
+//remove duplicate
+
+let arr = [2, 1, 4, 5, 2, 5];
+
+let _unique = Array.from(new Set(arr));
+
+let unique = arr.filter((a, index) => arr.indexOf(a) === index);
+
+//![object, object] is the string representation of a JavaScript object data type.To fix this, you can use the JSON.stringify() method

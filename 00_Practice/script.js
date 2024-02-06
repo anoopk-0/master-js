@@ -1,14 +1,17 @@
-//creating polly file for Object.assign(), Map.
+const arr = [2, 4, 1, 5];
 
-function callback(arr) {
-  let arr = [];
-  for (const i of arr) {
-    arr.push(arr[i]);
+Array.prototype.myReduce = function (callback, initial) {
+  const self = this;
+  const newArr = [];
+  let aggregate = initial;
+
+  for (let index = 0; index < self.length; index++) {
+    aggregate = callback(aggregate, self[index], index);
   }
 
-  return arr;
-}
-
-Function.prototype.myMap = function (callback) {
-  return callback(this);
+  return aggregate;
 };
+
+const result = arr.myReduce((total, a) => (total += a), 0);
+
+console.log(result);

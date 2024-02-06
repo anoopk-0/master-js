@@ -12,7 +12,7 @@ let variableName = value;
 
 TOPIC:Undefined vs. undeclared variables
 
-An undefined variable is a variable that has been declared but has not been initialized with a value.In contrast, an undeclared variable is a variable that has not been declared.
+An undefined variable is a variable that has been declared but has not been initialized with a value. In contrast, an undeclared variable is a variable that has not been declared.
 
 console.log(counter); - the counter variable has not been declared. Hence, accessing it causes a ReferenceError
 

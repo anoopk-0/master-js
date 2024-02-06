@@ -20,7 +20,7 @@ That’s where asynchronous JavaScript comes into play. Using asynchronous JavaS
 
 code executes inside the JavaScript engine,
 
-Execution Context
+### Execution Context
 
 An Execution Context is an abstract concept of an environment where the JavaScript code is evaluated and executed. Whenever any code is run in JavaScript, it’s run inside an execution context.
 

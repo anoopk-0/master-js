@@ -12,7 +12,7 @@ function Circle(radius, color) {
   this.radius = radius;
 }
 
-//IMP:The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.
+//!IMP:The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.
 
 Circle.prototype = Object.create(Shape.prototype);
 
